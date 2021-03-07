@@ -1,0 +1,179 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>meny</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		.demo_container {
+			margin: 100px auto;
+			width: 300px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#cssmenu li.has-sub > a').on('click', function () {
+				$(this).removeAttr('href');
+				var element = $(this).parent('li');
+				if (element.hasClass('open')) {
+					element.removeClass('open');
+					element.find('li').removeClass('open');
+					element.find('ul').slideUp();
+				}
+				else {
+					element.addClass('open');
+					element.children('ul').slideDown();
+					element.siblings('li').children('ul').slideUp();
+					element.siblings('li').removeClass('open');
+					element.siblings('li').find('li').removeClass('open');
+					element.siblings('li').find('ul').slideUp();
+				}
+			});
+
+			$('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
+		});
+	</script>
+<body>
+<div class="topHeader">
+</div>
+ <div class="demo_container">
+
+	<div id='cssmenu'>
+		<ul>
+		   <li class='has-sub'><a href='#'><span>Заявка</span></a>
+			  <ul>
+				 <li class='has-sub'><a href='#'><span>Аплікація соломою, з фетру та інші</span></a>
+					<ul>
+						<li><a href='https://docs.google.com/forms/d/1GXWyruIdJL9PQe96e3DdndGWRy5RJ0hyVXf63xlSAx0/edit?usp=sharing'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1jVxWQ84XCnyKRmwKNTL_unrAAIBIoUC0xzBm17xrCdM/edit?usp=sharing'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/12m8O11k8Tnl3gHXKPkkThhrH6SgL1YBloy6V-Kd0QL0/edit?usp=sharing'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1fWsDDedmhMtf4WPDlMuKHNaxUPNKq7aABGhhY7kWNq4/edit?usp=sharing'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1OzKor8-egXaNMo0zuJtoGVfDrzwL-evxjNqSs6_MChQ/edit?usp=sharing'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1GOH5Ub82QUvYjz2cQ906A-VbsiCRcBenoy3nUQWsnwE/edit?usp=sharing'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1dHac2_ownP4G7PvD5ZczLa4sl_T8sOSz6OgDMbcJ7E8/edit?usp=sharing'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1N8awKRBKXT2a_Fxbgkuwz_8d01Nk8sDDWhz6Vfl5kqU/edit?usp=sharing'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/15LWXhzOU-dw5oz7zSg2-PGPJ3AoOb0hTriUV3eH5a78/edit?usp=sharing'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1ATqco32gjdB8s3FnEgRkTcgB86gJ1Xmoz7IoUmlHNgg/edit?usp=sharing'><span>Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Валяння вовною</span></a>
+					<ul>
+						<li><a href='https://docs.google.com/forms/d/1w1I0RRaTWRlWFDPva-p3IzYIrIgspY52NEXtVHQUlG0/edit?usp=sharing'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/10Yc1nLZgDz1BIxim0tLNmqP4GOUtSqs0y4PsP3llKus/edit?usp=sharing'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1sjIewp7DBdX-D0e57T9jceMbnsxRmlspeJkajK1BTBM/edit?usp=sharing'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1CLGD2wutmj7P3i445ho_ULfJXP7mxrrXFy76dMJ0v1Q/edit?usp=sharing'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/16bQLLUL8tACZvKJkskx0U9zm1yoAsJ5fj5BIpaM8ino/edit?usp=sharing'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1C_OWU_69vCMU1k9iQaX3QJtV_9VjkHgJ4RLNp9ufj8w/edit?usp=sharing'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1qNkVtYre0oxKtW8zrkS9osdFQa7GdqY3OHFkMpBXnEo/edit?usp=sharing'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1o2dFVwKHFNEbHEo_cuony1p_DIbEA2Rxpk8RncYlbXg/edit?usp=sharing'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/11FpT9Ftt1fWfY-ABmxtCz6ne8UMY-UK4qh6VevRg0XE/edit?usp=sharing'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1es8VdMrIxcUG0w9fAxWcp5fBJqwza3uKlWRM9Uyr4Mg/edit?usp=sharing'><span>Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Випалювання</span></a>
+					<ul>
+						<li><a href='https://docs.google.com/forms/d/1_Ujxiy_StdEEF0pYq6AI8wQXxb-RjYjXDOKPdi4IVjA/edit?usp=sharing'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1sWvkucQnVEitFDPUFjtTnRxKaJVjTKpDA80eA3tZECA/edit?usp=sharing'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1k6GdQHkDl3svnaaUyoAopu3SdhMhCp5vNjgj_kdHpMs/edit?usp=sharing'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/17Gzpbxt1AgHewZjD9ZCIFHkmoF3Z9bxhboeluaSAIV0/edit?usp=sharing'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/11LutHSqbqs-MhRRXVIe_srAb_agdzu6glo4UVC67Lss/edit?usp=sharing'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1mwSuxPJ3sQNjpLvzr3UizdDzWOGB_BJG5pTDe0vgsps/edit?usp=sharing'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1O2l-tVv_EHH5BswTEAfdQt3KF1HBXb9g-zYjVN35zWM/edit?usp=sharing'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1Bqq6S5ee2VCeZSsQ09rCg0RVnwwyQ5y-GKEkG9Czc_w/edit?usp=sharing'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/12vY2wurDbE3LWsojuJUFNtC0HOCyi0dzI-KoQPHDF7Q/edit?usp=sharing'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='https://docs.google.com/forms/d/1R-FlZ89yNWaEXDbHz3pDZDfk4ujmoG1pZmuMsVm2Lpg/edit?usp=sharing'><span>Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Вироби з соленого тіста</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Вириванки</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Витинанки</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Вишивка (різні види техніки)</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>Вітраж</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+				 <li class='has-sub'><a href='#'><span>В’язання</span></a>
+					<ul>
+						<li><a href='#'><span>Дебют 3-4 роки</span></a></li>
+						<li><a href='#'><span>I категорія 5-6 років</span></a></li>
+						<li><a href='#'><span>II категорія 7-8 років</span></a></li>
+						<li><a href='#'><span>III категорія 9-10 років</span></a></li>
+						<li><a href='#'><span>IV категорія 11-12 років</span></a></li>
+						<li><a href='#'><span>V категорія 13-14 років</span></a></li>
+						<li><a href='#'><span>VI категорія 15-16 років</span></a></li>
+						<li><a href='#'><span>VIІ категорія 17-19 років</span></a></li>
+						<li><a href='#'><span>VIІІ категорія 20-24 років</span></a></li>
+						<li><a href='#'><span>– Професіонали 25+</span></a></li>
+					</ul>
+				 </li>
+			 </ul>
+		   </li>
+		</ul>
+	</div>
+
+ </div>
+<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+</body>
+</html>
